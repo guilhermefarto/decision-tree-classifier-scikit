@@ -57,7 +57,7 @@ The arguments shoud be:
 ## Examples
 
 <a name="decision-tree-clf-examples"></a>
-### > Examples for predicting genrer (male or female) by decision tree classifier
+### > Examples for predicting gender (male or female) by decision tree classifier
 
 **Basic usage:**
 
@@ -156,7 +156,7 @@ xxx
 <a name="additional-information"></a>
 ## Additional information
 
-<a name="maze-color-changing"></a>
+<a name="export-decision-tree-graph"></a>
 ### > Export Decision Tree graph (PDF and PNG files)
 
 As mentioned, the `-e, --export` can be used to generate and export PDF and PNG files based on the Decision Tree graph.
@@ -166,3 +166,23 @@ As mentioned, the `-e, --export` can be used to generate and export PDF and PNG 
 
 A sample [PDF](example-output-files/data_graph.pdf) and [PNG](example-output-files/data_graph.png) can be visualized using these links.
 
+<a name="decision-tree-predict"></a>
+### > Predict using the trained Decision Tree
+
+The graph can be used to predict possible outputs to new values after the decision tree training with the original CSVs files.
+
+The .py project is developed to attempt three (3) predictions of examples for new values. For example, the genres (male or female) will be predicted according to the characteristics of `height`, `weight`, and `shoe_size`:
+
+```python
+    ## male prediction class
+    prediction = clf.predict([[190, 70, 43]])
+    print "Prediction for [[190, 70, 43]] = ", prediction
+
+    ## female prediction class
+    prediction = clf.predict([[177, 55, 35]])
+    print "Prediction for [[177, 55, 35]] = ", prediction
+
+    ## male and female prediction classes
+    prediction = clf.predict([[190, 70, 43], [177, 55, 35]])
+    print "Prediction for [[190, 70, 43], [177, 55, 35]] = ", prediction
+```
