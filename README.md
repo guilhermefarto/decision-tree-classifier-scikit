@@ -159,7 +159,7 @@ xxx
 <a name="extracting-data-csv-files"></a>
 ### > Extracting data from CSV files
 
-The Python function ```openCsvFiles()``` is responsible for opening and extracting data from CSV files. This function will return three (3) essential information: `identifiers`, `values`, and `classes`.
+The Python function ```openCsvFiles()``` is responsible for opening and extracting data from CSV files. This function will return three (3) essential informations: `identifiers`, `values`, and `classes`.
 
 * **`identifiers`**: a list that represents the identifiers (column headings - first line) of the CSV files;
 
