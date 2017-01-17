@@ -57,7 +57,7 @@ The arguments shoud be:
 ## Examples
 
 <a name="decision-tree-clf-examples"></a>
-### > Examples for predicting gender (male or female) by decision tree classifier
+### > Examples for predicting genre (male or female) by decision tree classifier
 
 **Basic usage:**
 
