@@ -237,3 +237,14 @@ Output:
     Prediction for [[177, 55, 35]] =  ['female']
     Prediction for [[190, 70, 43], [177, 55, 35]] =  ['male' 'female']
 ```
+
+<a name="predicting-trained-decision-tree"></a>
+### > Setting environment variable for [Graphviz](http://www.graphviz.org/) Python package
+
+It may be necessary to configure the environment variable that points to the bin directory of the default Graphviz installation even with the installation of the [Graphviz](http://www.graphviz.org/) and [PyDotPlus](pydotplus.readthedocs.io/) dependencies.
+
+An example is displayed at the follow ```snippet```:
+
+```
+SET PATH=%PATH%;C:\Users\XYZ\temp\decision-tree-classifier\graphviz-2.38\bin
+```
