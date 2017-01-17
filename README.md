@@ -152,3 +152,17 @@ python decision_tree_clf_scikit.py -c custom-data2.csv -d ; -q ' -e -o myfile
 Output:
 
 xxx
+
+<a name="additional-information"></a>
+## Additional information
+
+<a name="maze-color-changing"></a>
+### > Decision Tree Graph (PDF and PNG files)
+
+As mentioned, the `-e, --export` can be used to generate and export PDF and PNG files based on the Decision Tree graph.
+
+> In addition, it's possible to change the default file name by using the `-o OUTPUTFILENAME, --outputFileName OUTPUTFILENAME` argument.
+> The default file names are `data_graph.pdf` and `data_graph.png`.
+
+A sample [PDF](example-output-files/data_graph.pdf) and [PNG](example-output-files/data_graph.png) can be visualized using these links.
+
