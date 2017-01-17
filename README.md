@@ -198,7 +198,7 @@ The following `snippet` represents the extraction of data from CSV files:
 <a name="exporting-graphical-representation-decision-tree-graph"></a>
 ### > Exporting graphical representation for Decision Tree graph (PDF and PNG files)
 
-As mentioned, the `-e, --export` can be used to generate and export PDF and PNG files based on the Decision Tree graph.
+As mentioned, the `-e, --export` argument can be used to generate and export PDF and PNG files based on the Decision Tree graph.
 
 > In addition, it's possible to change the default file name by using the `-o OUTPUTFILENAME, --outputFileName OUTPUTFILENAME` argument.
 > The default file names are `data_graph.pdf` and `data_graph.png`.
