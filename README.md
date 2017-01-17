@@ -161,9 +161,47 @@ xxx
 
 The Python function ```openCsvFiles()``` is responsible for opening and extracting data from CSV files. This function will return three (3) essential information: `identifiers`, `values`, and `classes`.
 
-* **`identifiers`**: asdf;
-* **`values`**: asdf;
-* **`classes`**: asdf;
+* **`identifiers`**: a list that represents the identifiers (column headings - first line) of the CSV files;
+
+> For example, `height`, `weight`, `shoe_size`, and `gender` in the context of characteristics and genre
+
+* **`values`**: a list that represents the values for training data (all rows excluding the identifiers - previous item) of the CSV files;
+
+> For example, the following data:
+
+```
+181,80,44
+177,70,43
+160,60,38
+154,54,37
+166,65,40
+190,90,47
+175,64,39
+177,70,40
+159,55,37
+171,75,42
+181,85,43
+```
+
+* **`classes`**: a list that represents the classes (or results) according to identifiers and values of the CSV files;
+
+> For example, the following data (each row is also related to the values - previous item):
+
+```
+male
+male
+female
+female
+male
+male
+female
+female
+female
+male
+male
+```
+
+The following `snippet` represents the extraction of data from CSV files:
 
 ```python
 	identifiers, values, classes = openCsvFiles(CSV_FILE, CLASSES_CSV_FILE)
