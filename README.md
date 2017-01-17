@@ -39,7 +39,7 @@ The arguments shoud be:
 * path of csv file that contains all training data
     
 `-cl CLASSES, --classes CLASSES` *(optional)*
-* name of csv file (only with classes) that contains all training data. Using this argument implies that the csv file (-c, --csv argument) should not contain the (last) column with classes
+* name of csv file (only with classes) that contains all training data. Using this argument implies that the csv file (`-c CSV, --csv CSV` argument) should not contain the (last) column with classes
 
 `-d DELIMITER, --delimiter DELIMITER` *(optional)*
 * delimiter char for CSV file
