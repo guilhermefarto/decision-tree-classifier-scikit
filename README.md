@@ -1,7 +1,7 @@
 # decision-tree-classifier-scikit
 
 Python project for
-* (i) [Decision Tree Classifier](#decision-tree-clf) using open source scikit-learn library ([examples](#decision-tree-clf-examples))
+* (i) [Decision Tree Classifier](#decision-tree-clf) using open source scikit-learn library ([examples](#all-examples))
 
 ## Dependencies
 
