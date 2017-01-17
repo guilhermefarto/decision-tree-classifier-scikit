@@ -186,3 +186,11 @@ The .py project is developed to attempt three (3) predictions of examples for ne
     prediction = clf.predict([[190, 70, 43], [177, 55, 35]])
     print "Prediction for [[190, 70, 43], [177, 55, 35]] = ", prediction
 ```
+
+Output:
+
+```python
+    Prediction for [[190, 70, 43]] =  ['male']
+    Prediction for [[177, 55, 35]] =  ['female']
+    Prediction for [[190, 70, 43], [177, 55, 35]] =  ['male' 'female']
+```
