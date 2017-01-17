@@ -51,7 +51,7 @@ The arguments shoud be:
 * generate and export PDF and PNG with decision tree graph
 
 `-o OUTPUTFILENAME, --outputFileName OUTPUTFILENAME` *(optional)*
-* output filename for PDF and PNG files
+* output file name for PDF and PNG files
 
 <a name="all-examples"></a>
 ## Examples
