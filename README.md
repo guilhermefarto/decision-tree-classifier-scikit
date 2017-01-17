@@ -86,7 +86,7 @@ xxx
 * **Example #3: XXX**
 
 ```python
-python decision_tree_clf_scikit.py -p c:/mazes
+python decision_tree_clf_scikit.py -p c:/data-science
 ```
 
 Output:
@@ -96,7 +96,7 @@ xxx
 * **Example #4: XXX**
 
 ```python
-python decision_tree_clf_scikit.py -e -p c:/mazes
+python decision_tree_clf_scikit.py -e -p c:/data-science
 ```
 
 Output:
@@ -156,6 +156,23 @@ xxx
 <a name="additional-information"></a>
 ## Additional information
 
+<a name="extracting-data-csv-files"></a>
+### > Extracting data from CSV files
+
+The Python function ```openCsvFiles()``` is responsible for opening and extracting data from CSV files. This function will return three (3) essential information: `identifiers`, `values`, and `classes`.
+
+* **`identifiers`**: asdf;
+* **`values`**: asdf;
+* **`classes`**: asdf;
+
+```python
+	identifiers, values, classes = openCsvFiles(CSV_FILE, CLASSES_CSV_FILE)
+
+	print "Identifiers ...: %s" % (identifiers)
+	print "Values ........: %s" % (values)
+	print "Classes .......: %s" % (classes)
+```
+
 <a name="export-decision-tree-graph"></a>
 ### > Export Decision Tree graph (PDF and PNG files)
 
@@ -173,7 +190,7 @@ A sample [PDF](example-output-files/data_graph.pdf) and [PNG](example-output-fil
 <a name="decision-tree-predict"></a>
 ### > Predict using the trained Decision Tree
 
-The graph can be used to predict possible outputs to new values after the decision tree training with the original CSVs files.
+The graph can be used to predict possible outputs to new values after the decision tree training with the original CSV data files.
 
 The .py project is developed to attempt three (3) predictions of examples for new values. For example, the genres (male or female) will be predicted according to the characteristics of `height`, `weight`, and `shoe_size`:
 
