@@ -157,7 +157,7 @@ xxx
 ## Additional information
 
 <a name="maze-color-changing"></a>
-### > Decision Tree Graph (PDF and PNG files)
+### > Export Decision Tree graph (PDF and PNG files)
 
 As mentioned, the `-e, --export` can be used to generate and export PDF and PNG files based on the Decision Tree graph.
 
