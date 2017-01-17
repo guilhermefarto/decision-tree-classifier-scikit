@@ -166,6 +166,10 @@ As mentioned, the `-e, --export` can be used to generate and export PDF and PNG 
 
 A sample [PDF](example-output-files/data_graph.pdf) and [PNG](example-output-files/data_graph.png) can be visualized using these links.
 
+| data_graph.png           |
+| ------------------------ |
+| ![](example-output-files/data_graph.png) |
+
 <a name="decision-tree-predict"></a>
 ### > Predict using the trained Decision Tree
 
