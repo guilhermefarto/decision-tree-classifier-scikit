@@ -85,6 +85,8 @@ Classes .......: ['male', 'male', 'female', 'female', 'male', 'male', 'female', 
 python decision_tree_clf_scikit.py -e
 ```
 
+> This [section](#exporting-graphical-representation-decision-tree-graph) exemplifies the feature for generating and exporting Decision Tree graph.
+
 Output:
 
 The same output as previous item but generating and export PDF and PNG files based on the Decision Tree graph.
