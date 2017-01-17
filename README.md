@@ -169,7 +169,7 @@ The Python function ```openCsvFiles()``` is responsible for opening and extracti
 
 * **`classes`**: a list that represents the classes (or results) according to identifiers and values of the CSV files;
 
-> For example, the following data (each row is also related to the values - previous item):
+> For example, the following data (each row is related to the values - previous item):
 
 ```
 male
