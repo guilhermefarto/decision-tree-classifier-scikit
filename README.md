@@ -7,13 +7,14 @@ Python project for
 
 The .py project adopts [scikit-learn](http://scikit-learn.org/) - an open source Python library that implements a range of machine learning, preprocessing, cross-validation and visualization algorithms - and [PyDotPlus](pydotplus.readthedocs.io/) - a Python Interface to Graphviz's Dot language.
 
-To install the `scikit-learn` dependency from [Python Package Index](https://pypi.python.org/pypi/pip) (PIP), execute the command in the prompt ```python pip install -U scikit-learn```.
+To install the `scikit-learn` dependency from [Python Package Index](https://pypi.python.org/pypi/pip) (PIP), execute the command in the prompt 
+`python pip install -U scikit-learn```.
 
 To install the `PyDotPlus` dependency from [Python Package Index](https://pypi.python.org/pypi/pip) (PIP), execute the command in the prompt ```python pip install -U graphviz``` and ```python install -U pydotplus```.
 
 > The [Graphviz](http://www.graphviz.org/) package must also be installed to use some dependent features, such as export PDF and/or PNG based on generated decision tree graph.
 
-> Other dependencies as ```argparse``` and ```csv``` are native to Python platform.
+> Other dependencies as `argparse` and `csv` are native to Python platform.
 
 ## Contact / License
 
@@ -143,7 +144,7 @@ python decision_tree_clf_scikit.py -c custom-data2.csv -d ; -q ' -e -o myfile
 <a name="extracting-data-csv-files"></a>
 ### > Extracting data from CSV files
 
-The Python function ```openCsvFiles()``` is responsible for opening and extracting data from CSV files. This function will return three (3) essential informations: `identifiers`, `values`, and `classes`.
+The Python function `openCsvFiles()` is responsible for opening and extracting data from CSV files. This function will return three (3) essential informations: `identifiers`, `values`, and `classes`.
 
 * **`identifiers`**: a list that represents the identifiers (column headings - first line) of the CSV files;
 
@@ -241,9 +242,9 @@ Output:
 <a name="predicting-trained-decision-tree"></a>
 ### > Setting environment variable for [Graphviz](http://www.graphviz.org/) Python package
 
-It may be necessary to configure the environment variable that points to the bin directory of the default Graphviz installation even with the installation of the [Graphviz](http://www.graphviz.org/) and [PyDotPlus](pydotplus.readthedocs.io/) dependencies.
+It may be necessary to configure the environment variable that points to the `bin` directory of the default Graphviz installation even with the installation of the [Graphviz](http://www.graphviz.org/) and [PyDotPlus](pydotplus.readthedocs.io/) dependencies.
 
-An example is displayed at the follow ```snippet```:
+An example is displayed at the follow `snippet`:
 
 ```
 SET PATH=%PATH%;C:\Users\XYZ\temp\decision-tree-classifier\graphviz-2.38\bin
