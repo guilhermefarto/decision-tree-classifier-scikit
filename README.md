@@ -52,3 +52,103 @@ The arguments shoud be:
 
 `-o OUTPUTFILENAME, --outputFileName OUTPUTFILENAME` *(optional)*
 * output filename for PDF and PNG files
+
+<a name="all-examples"></a>
+## Examples
+
+<a name="decision-tree-clf-examples"></a>
+### > Examples for predicting genrer (male or female) by decision tree classifier
+
+**Basic usage:**
+
+* **Example #1: XXX**
+
+```python
+python decision_tree_clf_scikit.py
+```
+
+Output:
+
+xxx
+
+* **Example #2: XXX**
+
+```python
+python decision_tree_clf_scikit.py -e
+```
+
+Output:
+
+xxx
+
+**Another examples:**
+
+* **Example #3: XXX**
+
+```python
+python decision_tree_clf_scikit.py -p c:/mazes
+```
+
+Output:
+
+xxx
+
+* **Example #4: XXX**
+
+```python
+python decision_tree_clf_scikit.py -e -p c:/mazes
+```
+
+Output:
+
+xxx
+
+* **Example #5: XXX**
+
+```python
+python decision_tree_clf_scikit.py -c data_without_classes.csv -cl classes.csv
+```
+
+Output:
+
+xxx
+
+* **Example #6: XXX**
+
+```python
+python decision_tree_clf_scikit.py -c custom-data1.csv -d ;
+```
+
+Output:
+
+xxx
+
+* **Example #7: XXX**
+
+```python
+python decision_tree_clf_scikit.py -c custom-data2.csv -d ; -q '
+```
+
+Output:
+
+xxx
+
+* **Example #8: XXX**
+
+```python
+python decision_tree_clf_scikit.py -c custom-data2.csv -d ; -q ' -e
+```
+
+Output:
+
+xxx
+
+* **Example #9: XXX**
+
+```python
+python decision_tree_clf_scikit.py -c custom-data2.csv -d ; -q ' -e -o myfile
+```
+
+Output:
+
+xxx
