@@ -61,7 +61,7 @@ The arguments shoud be:
 
 **Basic usage:**
 
-* **Example #1: XXX**
+* **Example #1: Train and predict using default "data.csv" CSV file**
 
 ```python
 python decision_tree_clf_scikit.py
@@ -69,9 +69,17 @@ python decision_tree_clf_scikit.py
 
 Output:
 
-xxx
+```python
+	Opening CSV file: [data.csv]
+	Identifiers ...: ['height', 'weight', 'shoe_size', 'gender']
+Values ........: [['181', '80', '44'], ['177', '70', '43'], ['160', '60', '38'], ['154', '54', '37'], ['166', '65', '40'], ['190', '90', '47'], ['175', '64', '39'], ['177', '70', '40'], ['159', '55', '37'], ['171', '75', '42'], ['181', '85', '43']]
+Classes .......: ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female', 'female', 'male', 'male']
+	Prediction for [[190, 70, 43]] =  ['male']
+	Prediction for [[177, 55, 35]] =  ['female']
+	Prediction for [[190, 70, 43], [177, 55, 35]] =  ['male' 'female']
+```
 
-* **Example #2: XXX**
+* **Example #2: Train and predict using default "data.csv" CSV file but also generating/exporting PDF and PNG files (`-e, --export` argument)**
 
 ```python
 python decision_tree_clf_scikit.py -e
@@ -79,79 +87,51 @@ python decision_tree_clf_scikit.py -e
 
 Output:
 
-xxx
+The same output as previous item but generating and export PDF and PNG files based on the Decision Tree graph.
 
 **Another examples:**
 
-* **Example #3: XXX**
+* **Example #3: Train and predict using default "data.csv" CSV file from a custom directory**
 
 ```python
 python decision_tree_clf_scikit.py -p c:/data-science
 ```
 
-Output:
-
-xxx
-
-* **Example #4: XXX**
+* **Example #4: Train and predict using default "data.csv" CSV file from a custom directory but also generating/exporting PDF and PNG files**
 
 ```python
 python decision_tree_clf_scikit.py -e -p c:/data-science
 ```
 
-Output:
-
-xxx
-
-* **Example #5: XXX**
+* **Example #5: Train and predict using customs CSV files for data values (`-c CSV, --csv CSV` argument) and data classes (`-cl CLASSES, --classes CLASSES` argument)**
 
 ```python
 python decision_tree_clf_scikit.py -c data_without_classes.csv -cl classes.csv
 ```
 
-Output:
-
-xxx
-
-* **Example #6: XXX**
+* **Example #6: Train and predict using a custom CSV file with delimiter `";"` (`-d DELIMITER, --delimiter DELIMITER` argument) - instead of `","`**
 
 ```python
 python decision_tree_clf_scikit.py -c custom-data1.csv -d ;
 ```
 
-Output:
-
-xxx
-
-* **Example #7: XXX**
+* **Example #7: Train and predict using a custom CSV file with delimiter `";"` and quote char `"'"` (`-q QUOTE, --quote QUOTE` argument)**
 
 ```python
 python decision_tree_clf_scikit.py -c custom-data2.csv -d ; -q '
 ```
 
-Output:
-
-xxx
-
-* **Example #8: XXX**
+* **Example #8: Train and predict using a custom CSV file with delimiter `";"` and quote char `"'"` but also generating/exporting PDF and PNG files**
 
 ```python
 python decision_tree_clf_scikit.py -c custom-data2.csv -d ; -q ' -e
 ```
 
-Output:
-
-xxx
-
-* **Example #9: XXX**
+* **Example #9: Train and predict using a custom CSV file with delimiter `";"` and quote char `"'"` but also generating/exporting PDF and PNG files with custom name (`-o OUTPUTFILENAME, --outputFileName OUTPUTFILENAME` argument)**
 
 ```python
 python decision_tree_clf_scikit.py -c custom-data2.csv -d ; -q ' -e -o myfile
 ```
-
-Output:
-
-xxx
 
 <a name="additional-information"></a>
 ## Additional information
@@ -163,7 +143,7 @@ The Python function ```openCsvFiles()``` is responsible for opening and extracti
 
 * **`identifiers`**: a list that represents the identifiers (column headings - first line) of the CSV files;
 
-> For example, `height`, `weight`, `shoe_size`, and `gender` in the context of characteristics and genre
+> For example, `height`, `weight`, `shoe_size`, and `gender` in the context of characteristics and genre (male or female)
 
 * **`values`**: a list that represents the values for training data (all rows excluding the identifiers - previous item) of the CSV files;
 
@@ -230,7 +210,7 @@ A sample [PDF](example-output-files/data_graph.pdf) and [PNG](example-output-fil
 
 The graph can be used to predict possible outputs to new values after the decision tree training with the original CSV data files.
 
-The .py project is developed to attempt three (3) predictions of examples for new values. For example, the genres (male or female) will be predicted according to the characteristics of `height`, `weight`, and `shoe_size`:
+The .py project is developed to attempt three (3) predictions of examples for new values. For example, the genre (male or female) will be predicted according to the characteristics of `height`, `weight`, and `shoe_size`:
 
 ```python
     ## male prediction class
