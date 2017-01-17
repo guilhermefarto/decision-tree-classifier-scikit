@@ -133,6 +133,8 @@ python decision_tree_clf_scikit.py -c custom-data2.csv -d ; -q ' -e
 python decision_tree_clf_scikit.py -c custom-data2.csv -d ; -q ' -e -o myfile
 ```
 
+> The exported files will be named as `myfile.pdf` and `myfile.png`.
+
 <a name="additional-information"></a>
 ## Additional information
 
