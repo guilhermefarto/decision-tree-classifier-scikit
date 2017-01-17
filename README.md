@@ -173,8 +173,8 @@ The Python function ```openCsvFiles()``` is responsible for opening and extracti
 	print "Classes .......: %s" % (classes)
 ```
 
-<a name="export-decision-tree-graph"></a>
-### > Export Decision Tree graph (PDF and PNG files)
+<a name="exporting-graphical-representation-decision-tree-graph"></a>
+### > Exporting graphical representation for Decision Tree graph (PDF and PNG files)
 
 As mentioned, the `-e, --export` can be used to generate and export PDF and PNG files based on the Decision Tree graph.
 
@@ -187,8 +187,8 @@ A sample [PDF](example-output-files/data_graph.pdf) and [PNG](example-output-fil
 | ------------------------ |
 | ![](example-output-files/data_graph.png) |
 
-<a name="decision-tree-predict"></a>
-### > Predict using the trained Decision Tree
+<a name="predicting-trained-decision-tree"></a>
+### > Predicting by trained Decision Tree
 
 The graph can be used to predict possible outputs to new values after the decision tree training with the original CSV data files.
 
