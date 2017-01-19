@@ -8,9 +8,9 @@ Python project for
 The .py project adopts [scikit-learn](http://scikit-learn.org/) - an open source Python library that implements a range of machine learning, preprocessing, cross-validation and visualization algorithms - and [PyDotPlus](pydotplus.readthedocs.io/) - a Python Interface to Graphviz's Dot language.
 
 To install the `scikit-learn` dependency from [Python Package Index](https://pypi.python.org/pypi/pip) (PIP), execute the command in the prompt 
-`python pip install -U scikit-learn```.
+`python pip install -U scikit-learn`.
 
-To install the `PyDotPlus` dependency from [Python Package Index](https://pypi.python.org/pypi/pip) (PIP), execute the command in the prompt ```python pip install -U graphviz``` and ```python install -U pydotplus```.
+To install the `PyDotPlus` dependency from [Python Package Index](https://pypi.python.org/pypi/pip) (PIP), execute the command in the prompt `python pip install -U graphviz` and `python install -U pydotplus`.
 
 > The [Graphviz](http://www.graphviz.org/) package must also be installed to use some dependent features, such as export PDF and/or PNG based on generated decision tree graph.
 
@@ -71,13 +71,13 @@ python decision_tree_clf_scikit.py
 Output:
 
 ```python
-	Opening CSV file: [data.csv]
-	Identifiers ...: ['height', 'weight', 'shoe_size', 'gender']
-	Values ........: [['181', '80', '44'], ['177', '70', '43'], ['160', '60', '38'], ['154', '54', '37'], ['166', '65', '40'], ['190', '90', '47'], ['175', '64', '39'], ['177', '70', '40'], ['159', '55', '37'], ['171', '75', '42'], ['181', '85', '43']]
-	Classes .......: ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female', 'female', 'male', 'male']
-	Prediction for [[190, 70, 43]] =  ['male']
-	Prediction for [[177, 55, 35]] =  ['female']
-	Prediction for [[190, 70, 43], [177, 55, 35]] =  ['male' 'female']
+    Opening CSV file: [data.csv]
+    Identifiers ...: ['height', 'weight', 'shoe_size', 'gender']
+    Values ........: [['181', '80', '44'], ['177', '70', '43'], ['160', '60', '38'], ['154', '54', '37'], ['166', '65', '40'], ['190', '90', '47'], ['175', '64', '39'], ['177', '70', '40'], ['159', '55', '37'], ['171', '75', '42'], ['181', '85', '43']]
+    Classes .......: ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female', 'female', 'male', 'male']
+    Prediction for [[190, 70, 43]] =  ['male']
+    Prediction for [[177, 55, 35]] =  ['female']
+    Prediction for [[190, 70, 43], [177, 55, 35]] =  ['male' 'female']
 ```
 
 * **Example #2: Train and predict using default "data.csv" CSV file but also generating/exporting PDF and PNG files (`-e, --export` argument)**
@@ -189,11 +189,11 @@ male
 The following `snippet` represents the extraction of data from CSV files:
 
 ```python
-	identifiers, values, classes = openCsvFiles(CSV_FILE, CLASSES_CSV_FILE)
+    identifiers, values, classes = openCsvFiles(CSV_FILE, CLASSES_CSV_FILE)
 
-	print "Identifiers ...: %s" % (identifiers)
-	print "Values ........: %s" % (values)
-	print "Classes .......: %s" % (classes)
+    print "Identifiers ...: %s" % (identifiers)
+    print "Values ........: %s" % (values)
+    print "Classes .......: %s" % (classes)
 ```
 
 <a name="exporting-graphical-representation-decision-tree-graph"></a>
